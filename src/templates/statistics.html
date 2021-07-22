@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<h2>Statistics Page</h2>
+<div>
+    <h3>Largest single request:</h3>
+    <p id="largest-request"></p>
+</div>
+<div>
+    <h3>Most requestful employee(s):</h3>
+    <p id="most-requests"></p>
+</div>
+<div>
+    <h3>Total money requested:</h3>
+    <p id="total-money-requested"></p>
+</div>
+<div>
+    <h3>Mean requested amount:</h3>
+    <p id="mean-request"></p>
+</div>
+<script type="text/javascript" src="/static/js/html_scripts/statistics.js"></script>
+{% endblock %}

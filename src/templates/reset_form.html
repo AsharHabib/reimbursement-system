@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+<div id="token-valid">
+    <h3>Reset Password</h3>
+    <div>
+        <form method="post" action="{{url_for('auth.reset_form_post', is_employee=session['is_employee'], username=session['username'])}}">
+            <div>
+                <label for="new_password">Enter new password here:</label>
+            <input type="password" id="new_password" name="new_password" autofocus="" placeholder="Enter new password here">
+            </div>
+            <div>
+                <label for="confirm_password">Retype your password:</label>
+            <input type="password" id="confirm_password" name="confirm_password" autofocus="" placeholder="Retype password here">
+            </div>
+            <button type="submit">Reset password</button>
+        </form>
+    </div>
+</div>
+
+{% endblock %}

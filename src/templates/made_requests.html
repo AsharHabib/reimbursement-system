@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<a href="{{url_for('user_blueprint.requests', submit='True')}}" id="submit-request-link">
+  Submit new reimbursement request
+</a>
+<form method="post" action="{{url_for('employee_blueprint.delete_request')}}" id="delete-requests">
+  <table>
+    <thead>
+      <tr>
+        <th><b>Amount Requested</b></th>
+        <th><b>Reason Given</b></th>
+        <th><b>Current Status</b></th>
+        <th><b>Submitted at</b></th>
+        <th><b>Message from Manager</b></th>
+        <th><b>Delete?</b></th>
+      </tr>
+    </thead>
+    <tbody id="made-requests"></tbody>
+  </table>
+</form>
+<script type="text/javascript" src="/static/js/html_scripts/made_requests.js"></script>
+{% endblock %}

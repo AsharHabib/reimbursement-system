@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<h3>Resend username</h3>
+<div>
+    {% with messages = get_flashed_messages() %}
+    {% if messages[0] == "Those names do not match, try again." or messages[0] == "One of those names does not exist, try again." %}
+    <div class="notification is-danger">
+        {{messages[0]}}
+    </div>
+    {% endif %}
+    {% endwith %}
+    <form method="post" action="{{url_for('auth.resend_user_post', is_employee=True)}}">
+        <label for="resend_first_name">Type your first name</label>
+        <input type="text" name="first_name" placeholder="Type your first name" autofocus="" id="resend_first_name">
+        <label for="resend_last_name">Type your last name</label>
+        <input type="text" name="last_name" placeholder="Type your last name" autofocus="" id="resend_last_name">
+        <button type="submit" id="resend-username-button">Resend username</button>
+    </form>
+</div>
+{% endblock %}

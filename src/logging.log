@@ -1,0 +1,141 @@
+2021-07-10 00:19:28,554 - my_logger - ERROR - User attempted /signup without being logged in
+2021-07-10 00:20:05,905 - my_logger - WARNING - Employee attempted to use /signup
+2021-07-10 01:07:28,240 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 01:08:01,572 - my_logger - WARNING - Invalid 2FA token submitted
+2021-07-10 01:08:09,712 - my_logger - WARNING - Invalid 2FA token submitted
+2021-07-10 01:08:25,504 - my_logger - WARNING - Invalid 2FA token submitted
+2021-07-10 01:12:29,395 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 01:16:42,431 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 01:19:01,618 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 01:21:55,566 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 01:22:04,981 - my_logger - WARNING - Invalid 2FA token submitted
+2021-07-10 01:22:12,789 - my_logger - WARNING - Invalid 2FA token submitted
+2021-07-10 01:22:49,162 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 01:25:57,301 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 01:28:52,951 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 01:34:32,778 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 01:36:22,534 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 01:40:46,150 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 01:44:11,291 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 01:44:21,276 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 01:46:06,856 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 01:47:19,075 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 01:48:49,047 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 01:49:48,195 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 01:50:58,919 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 01:52:06,810 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 01:53:09,431 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 01:55:30,764 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 01:56:51,636 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 01:57:09,795 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 01:58:06,499 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 01:59:12,718 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 17:10:39,771 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 18:41:15,356 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 18:41:16,515 - my_logger - WARNING - Invalid 2FA token submitted
+2021-07-10 18:41:34,576 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 18:54:54,672 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 18:57:47,115 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 18:59:35,362 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 18:59:44,390 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 18:59:52,464 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 19:16:23,072 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 19:22:31,097 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 19:24:40,642 - my_logger - ERROR - Either username or password do not exist
+2021-07-10 19:26:59,906 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 19:37:23,717 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 19:45:14,046 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 19:50:21,560 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 19:59:06,623 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 20:00:02,004 - my_logger - ERROR - Either username or password do not exist
+2021-07-10 20:02:01,528 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 20:02:31,518 - my_logger - WARNING - Invalid 2FA token submitted
+2021-07-10 20:03:02,174 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 20:03:41,240 - my_logger - ERROR - Either username or password do not exist
+2021-07-10 20:05:44,770 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 20:06:29,437 - my_logger - ERROR - Either username or password do not exist
+2021-07-10 20:07:36,364 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 20:08:20,151 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 20:08:23,744 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 20:28:59,141 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 20:29:01,120 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 20:29:04,204 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 20:29:11,345 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 20:29:28,428 - my_logger - ERROR - One or both names did not exist
+2021-07-10 20:29:28,678 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 20:29:35,343 - my_logger - WARNING - The names did not match
+2021-07-10 20:29:35,613 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 20:41:40,723 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 20:41:41,390 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 20:42:27,440 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 20:45:57,732 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 20:45:59,668 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 20:46:00,747 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 20:46:59,211 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 20:48:59,686 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 20:53:47,659 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 20:53:49,117 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 20:53:50,666 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 20:56:20,448 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 21:00:39,931 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 21:00:41,396 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 21:00:42,348 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 21:04:09,833 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 21:12:20,032 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 21:12:23,541 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 21:16:56,081 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 21:16:57,623 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 21:16:58,238 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 21:16:59,220 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 21:17:01,829 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 21:17:07,524 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 21:19:17,973 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 21:19:19,555 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 21:19:20,287 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 21:19:22,990 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 21:19:27,035 - my_logger - WARNING - Invalid 2FA token submitted
+2021-07-10 21:19:27,252 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 21:19:35,506 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 21:21:18,105 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 21:21:21,321 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 21:22:06,134 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 21:22:08,467 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 21:23:09,348 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 21:23:10,946 - my_logger - WARNING - Invalid 2FA token submitted
+2021-07-10 21:23:11,812 - my_logger - WARNING - Invalid 2FA token submitted
+2021-07-10 21:23:12,800 - my_logger - WARNING - Invalid 2FA token submitted
+2021-07-10 21:23:13,790 - my_logger - WARNING - Invalid 2FA token submitted
+2021-07-10 21:23:14,917 - my_logger - WARNING - Invalid 2FA token submitted
+2021-07-10 21:23:16,335 - my_logger - WARNING - Invalid 2FA token submitted
+2021-07-10 21:23:17,518 - my_logger - WARNING - Invalid 2FA token submitted
+2021-07-10 21:23:18,558 - my_logger - WARNING - Invalid 2FA token submitted
+2021-07-10 21:23:21,689 - my_logger - WARNING - Invalid 2FA token submitted
+2021-07-10 21:23:26,833 - my_logger - WARNING - Invalid 2FA token submitted
+2021-07-10 21:23:27,069 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 21:23:42,316 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 21:24:05,629 - my_logger - ERROR - Either username or password do not exist
+2021-07-10 21:26:11,392 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 21:26:50,636 - my_logger - WARNING - Manager attempted to input an account that already exists
+2021-07-10 21:27:04,819 - my_logger - WARNING - Invalid 2FA token submitted
+2021-07-10 21:27:11,149 - my_logger - WARNING - Invalid 2FA token submitted
+2021-07-10 21:29:12,298 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 21:29:57,805 - my_logger - ERROR - Either username or password do not exist
+2021-07-10 21:30:25,711 - my_logger - WARNING - Logged in user attempted to login again
+2021-07-10 21:32:13,713 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 21:33:01,694 - my_logger - ERROR - Either username or password do not exist
+2021-07-10 21:34:22,849 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 21:34:29,313 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 21:35:06,937 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 21:35:56,039 - my_logger - WARNING - Manager attempted to input an account that already exists
+2021-07-10 21:37:07,228 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 21:37:08,201 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 21:37:13,951 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 21:37:19,782 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 21:38:20,328 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 21:38:21,349 - my_logger - WARNING - Invalid 2FA token submitted
+2021-07-10 21:38:22,505 - my_logger - WARNING - Invalid 2FA token submitted
+2021-07-10 21:38:23,521 - my_logger - WARNING - Invalid 2FA token submitted
+2021-07-10 21:38:24,611 - my_logger - WARNING - Invalid 2FA token submitted
+2021-07-10 21:40:02,511 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 21:40:09,054 - my_logger - ERROR - User attempted going to a nonexistent route
+2021-07-10 21:40:41,882 - my_logger - ERROR - Either username or password do not exist

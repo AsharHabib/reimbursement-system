@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<div>
+    <div>
+        <form method="post" action="{{url_for('employee_blueprint.submit_request')}}">
+            <label for="amount-requested">Requested Amount</label>
+            <input type="number" name="amount" id="amount-requested" placeholder="Requested Amount" autofocus="">
+            <label for="reason-given">State your reason</label>
+            <input type="text" name="reason" id="reason-given" placeholder="State reason" autofocus="">
+            <button type="submit" id="form-submit">Submit Request</button>
+        </form>
+    </div>
+    <h3>Alternatively, download this file and submit it to fill your request.</h3>
+    <div>
+        <a href="/static/text/request.txt" download="">Download file</a>
+        <form method="post" action="{{url_for('employee_blueprint.submit_request')}}" name="request-file" enctype="multipart/form-data">
+          <input type="file" id="myFile" name="filename">
+          <button type="submit" id="file-submit">Upload File</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

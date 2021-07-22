@@ -1,0 +1,53 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+<div id="manager-login">
+    <h3>Manager Login</h3>
+    {% with messages = get_flashed_messages() %}
+         {% if messages[0] == 'Please check your log in details and try again.' %}
+         <div class="notification is-danger">
+           {{messages[0]}}
+         </div>
+         {% endif %}
+         {% endwith %}
+    <div>
+        <form method="post" action="{{url_for('auth.login_post_manager', employee=False)}}">
+            <div>
+                <div>
+                    <input type="text" name="username" placeholder="Type username" autofocus="" id="username">
+                </div>
+            </div>
+            <div>
+                <a href="{{url_for('auth.resend_user', is_employee=False)}}">
+                    Forgot username?
+                </a>
+            </div>
+            <div>
+                <div>
+                    <input type="password" name="password" placeholder="Type password" autofocus="" id="password">
+                </div>
+            </div>
+            <span>
+                <a href="{{url_for('auth.reset_pass')}}">
+                    Forgot password?
+                </a>
+            </span>
+            <div>
+                <label>
+                    <input type="checkbox" name="remember">
+                    Remember me
+                </label>
+            </div>
+            <button id="login-button">Login</button>
+        </form>
+    </div>
+
+</div>
+
+<footer>
+    <a href="{{url_for('auth.pre_login')}}">
+        Return to previous log in page
+    </a>
+</footer>
+{% endblock %}

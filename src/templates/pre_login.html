@@ -1,0 +1,10 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<a href="{{url_for('auth.login', is_employee=True)}}" id="employee-login-link">
+    Login as employee
+</a>
+<a href="{{url_for('auth.login', is_employee=False)}}" id="manager-login-link">
+    Login as manager
+</a>
+{% endblock %}

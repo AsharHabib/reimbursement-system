@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<form method="post" action="{{url_for('manager_blueprint.update_status')}}" id="update-requests">
+  <table>
+    <thead>
+      <tr>
+        <th><b>Request Made by</b></th>
+        <th><b>Job Title</b></th>
+        <th><b>Amount Requested</b></th>
+        <th><b>Reason Given</b></th>
+        <th><b>Current Status</b></th>
+        <th><b>Submitted at</b></th>
+        <th><b>Change Status:</b></th>
+        <th><b>Leave a message here</b></th>
+      </tr>
+    </thead>
+    <tbody id="employee-requests"></tbody>
+  </table>
+  <button type="submit" id="update-requests-button">Update Requests</button>
+</form>
+<script type="text/javascript" src="/static/js/html_scripts/employee_requests.js"></script>
+{% endblock %}

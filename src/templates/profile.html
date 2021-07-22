@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+{% if session['account_type'] == 'Employee' %}
+<h1 id="employee-h1"></h1>
+{% elif session['account_type'] == 'Manager' %}
+<h1 id="manager-h1"></h1>
+{% with messages = get_flashed_messages() %}
+{% if messages[0] == "New employee account created!" %}
+<div class="notification is-danger">
+    {{messages[0]}}
+</div>
+{% endif %}
+{% endwith %}
+<h3>Your employees:</h3>
+<form method="post" action="{{url_for('manager_blueprint.delete_employees')}}" id="delete-employees">
+    <ol id="employees-list"></ol>
+</form>
+{% endif %}
+<script type="text/javascript" src="/static/js/html_scripts/profile.js"></script>
+{% endblock %}

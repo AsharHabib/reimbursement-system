@@ -1,0 +1,44 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<div>
+   <h3>Sign up (for managers to create employee accounts)</h3>
+   <div>
+        {% with messages = get_flashed_messages() %}
+        {% if messages[0] == "That account already exists." %}
+        <div class="notification is-danger">
+            {{messages[0]}}
+        </div>
+        {% endif %}
+        {% endwith %}
+        <form method="post" action="{{url_for('manager_blueprint.signup_post')}}">
+          <div>
+            <div>
+              <input type="text" name="first_name" id="first-name" placeholder="First Name" autofocus="" required>
+            </div>
+          </div>
+          <div>
+            <div>
+              <input type="text" name="last_name" id="last-name" placeholder="Last Name" autofocus="" required>
+            </div>
+          </div>
+          <div>
+            <div>
+              <input type="text" name="username" id="username" placeholder="Username" autofocus="" required>
+            </div>
+          </div>
+          <div>
+            <div>
+              <input type="password" name="password" id="password" placeholder="Password" autofocus="" required>
+            </div>
+          </div>
+          <div>
+            <div>
+              <input type="text" name="job_title" id="job-title" placeholder="Job Title of Employee" autofocus="" required>
+            </div>
+          </div>
+          <button type="submit" id="signup-button">Sign up</button>
+        </form>
+   </div>
+</div>
+{% endblock %}
