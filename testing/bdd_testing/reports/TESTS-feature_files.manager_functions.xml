@@ -1,0 +1,57 @@
+<testsuite name="feature_files.manager_functions.Manager Specific Functions" tests="4" errors="0" failures="0" skipped="0" time="22.8356" timestamp="2021-07-11T17:10:41.709128" hostname="DESKTOP-S4TUTV9"><testcase classname="feature_files.manager_functions.Manager Specific Functions" name="A manager would like to check all of their employees' requests" status="passed" time="3.22871"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: A manager would like to check all of their employees' requests
+    Given A manager is logged in ... passed in 1.757s
+    And The manager is on the profile page ... passed in 0.933s
+    When A manager clicks on the Reimbursement Requests link ... passed in 0.532s
+    Then The manager is redirected to the Reimbursement Requests page ... passed in 0.006s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="feature_files.manager_functions.Manager Specific Functions" name="A manager would like to change the status and message for a request" status="passed" time="9.376196"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: A manager would like to change the status and message for a request
+    Given A manager is logged in ... passed in 1.819s
+    And The manager is on the profile page ... passed in 0.908s
+    Given A manager is on the Reimbursement Requests page ... passed in 0.565s
+    When The manager changes the status for a request ... passed in 1.215s
+    And The manager adds an optional message ... passed in 0.018s
+    And The manager clicks the form button ... passed in 3.904s
+    Then The manager is redirected to the Reimbursement Requests page ... passed in 0.005s
+    And The updates are reflected for the particular request ... passed in 0.942s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="feature_files.manager_functions.Manager Specific Functions" name="A manager would like to create a new employee account" status="passed" time="6.971023"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: A manager would like to create a new employee account
+    Given A manager is logged in ... passed in 1.856s
+    And The manager is on the profile page ... passed in 0.896s
+    Given A manager is on the Sign Up page ... passed in 0.585s
+    When The manager inputs all the new account's information ... passed in 0.160s
+    And The manager clicks on the signup button ... passed in 2.032s
+    Then The manager is redirected to the Profile page ... passed in 0.007s
+    And The new employee is listed ... passed in 0.942s
+    And The manager can delete the new employee from the list ... passed in 0.492s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="feature_files.manager_functions.Manager Specific Functions" name="A manager would like to view the statistics on their employees' requests" status="passed" time="3.25967"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: A manager would like to view the statistics on their employees' requests
+    Given A manager is logged in ... passed in 1.794s
+    And The manager is on the profile page ... passed in 0.908s
+    When A manager clicks on the Statistics link ... passed in 0.547s
+    Then The manager is redirected to the Statistics page ... passed in 0.010s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

@@ -1,0 +1,14 @@
+Flask~=2.0.1
+Werkzeug~=2.0.1
+psycopg2
+pyodbc
+flask-login
+python-dateutil
+flask_login_multi
+flask_session
+flask_mail
+flask_socketio
+pyotp
+flask-bootstrap4
+behave
+selenium

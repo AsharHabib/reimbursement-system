@@ -1,0 +1,42 @@
+<testsuite name="feature_files.sending_emails.Sending Emails" tests="3" errors="0" failures="0" skipped="0" time="12.921458" timestamp="2021-07-11T17:11:01.873597" hostname="DESKTOP-S4TUTV9"><testcase classname="feature_files.sending_emails.Sending Emails" name="A user forgot their username and wants an email sent to remind them" status="passed" time="4.776392"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: A user forgot their username and wants an email sent to remind them
+    Given The user is on the Login Page ... passed in 0.102s
+    Given The user clicks on Forgot username? ... passed in 0.104s
+    When The user inputs their first name and last name ... passed in 0.034s
+    And The user clicks the Resend username button ... passed in 2.487s
+    Then The user is redirected to a page telling them the username email was sent ... passed in 2.049s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="feature_files.sending_emails.Sending Emails" name="A user forgot their username and wants an email sent to reset it" status="passed" time="3.966583"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: A user forgot their username and wants an email sent to reset it
+    Given The user is on the Login Page ... passed in 0.108s
+    Given The user clicks on Forgot password? ... passed in 0.114s
+    When The user inputs their username ... passed in 0.020s
+    And The user clicks the Reset password button ... passed in 0.555s
+    And The user enters the OTP ... passed in 0.048s
+    And The user clicks the Authenticate User button ... passed in 1.208s
+    Then The user is redirected to a page telling them the password email was sent ... passed in 1.915s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="feature_files.sending_emails.Sending Emails" name="A logged in user wants to reset their password" status="passed" time="4.178483"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: A logged in user wants to reset their password
+    Given The user is on the Login Page ... passed in 0.106s
+    Given The user logs in ... passed in 1.779s
+    And The user clicks on Settings ... passed in 0.504s
+    When The user clicks on the Send email link ... passed in 1.761s
+    Then The user is redirected to a page telling them the password email was sent again ... passed in 0.028s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

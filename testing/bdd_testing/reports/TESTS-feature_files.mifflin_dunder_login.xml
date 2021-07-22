@@ -1,0 +1,31 @@
+<testsuite name="feature_files.mifflin_dunder_login.Mifflin Dunder Login" tests="2" errors="0" failures="0" skipped="0" time="4.247235" timestamp="2021-07-11T17:10:47.180734" hostname="DESKTOP-S4TUTV9"><testcase classname="feature_files.mifflin_dunder_login.Mifflin Dunder Login" name="A user is on the pre login page and would like to login as an employee" status="passed" time="1.93996"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: A user is on the pre login page and would like to login as an employee
+    Given A user is on the pre login page ... passed in 0.050s
+    Given The user clicks on the Login as employee link ... passed in 0.092s
+    And The user enters the correct username and password as employee ... passed in 0.048s
+    And The user clicks submit button as employee ... passed in 0.544s
+    When The user enters the OTP as employee ... passed in 0.081s
+    And The user clicks the Authenticate User button as employee ... passed in 1.039s
+    Then The user is redirected to their employee profile ... passed in 0.085s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="feature_files.mifflin_dunder_login.Mifflin Dunder Login" name="A user is on the pre login page and would like to login as a manager" status="passed" time="2.307276"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: A user is on the pre login page and would like to login as a manager
+    Given A user is on the pre login page ... passed in 0.072s
+    Given The user clicks on the Login as manager link ... passed in 0.083s
+    And The user enters the correct username and password as manager ... passed in 0.050s
+    And The user clicks submit button as manager ... passed in 0.567s
+    When The user enters the OTP as manager ... passed in 0.069s
+    And The user clicks the Authenticate User button as manager ... passed in 1.384s
+    Then The user is redirected to their manager profile ... passed in 0.082s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

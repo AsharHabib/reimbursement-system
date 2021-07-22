@@ -1,0 +1,100 @@
+CREATE TABLE managers
+(
+   manager_id          integer        NOT NULL,
+   manager_username    varchar(255)   NOT NULL,
+   manager_password    varchar(255)   NOT NULL,
+   manager_first_name  varchar(255)   NOT NULL,
+   manager_last_name   varchar(255)   NOT NULL,
+   manager_email       varchar(255)   NOT NULL
+);
+
+ALTER TABLE managers
+   ADD CONSTRAINT managers_pkey
+   PRIMARY KEY (manager_id);
+
+CREATE TABLE employees
+(
+   employee_id          integer,
+   manager_id           integer        NOT NULL,
+   employee_username    varchar(255)   NOT NULL,
+   employee_password    varchar(255)   NOT NULL,
+   employee_first_name  varchar(255)   NOT NULL,
+   employee_last_name   varchar(255)   NOT NULL,
+   job_title            text           DEFAULT 'N/A'::text NOT NULL,
+   employee_email       varchar(255)   NOT NULL
+);
+
+ALTER TABLE employees
+   ADD CONSTRAINT pk_employees
+   PRIMARY KEY (employee_id);
+
+ALTER TABLE employees
+  ADD CONSTRAINT fk_manager FOREIGN KEY (manager_id)
+  REFERENCES managers (manager_id) 
+  ON UPDATE NO ACTION
+  ON DELETE NO ACTION;
+
+CREATE TABLE reimbursements
+(
+   reimbursement_id     integer        NOT NULL,
+   employee_id          integer        NOT NULL,
+   amount               integer        NOT NULL,
+   reason               text,
+   datetime             timestamptz,
+   status               status,
+   manager_id           integer        NOT NULL,
+   employee_first_name  varchar(255)   NOT NULL,
+   employee_last_name   varchar(255)   NOT NULL,
+   manager_message      text,
+   job_title            varchar(255)
+);
+
+-- enum 'status': 'pending','rejected','accepted'
+
+ALTER TABLE reimbursements
+   ADD CONSTRAINT reimbursements_pkey
+   PRIMARY KEY (reimbursement_id, employee_id, manager_id);
+
+ALTER TABLE reimbursements
+  ADD CONSTRAINT fk_employees FOREIGN KEY (employee_id)
+  REFERENCES employees (employee_id) 
+  ON UPDATE NO ACTION
+  ON DELETE CASCADE;
+  
+INSERT INTO managers (manager_id,manager_username,manager_password,manager_first_name,manager_last_name,manager_email) 
+VALUES
+  (1,'JoshPorter','joshporter','Josh','Porter','ashfrog96@gmail.com'),
+  (0,'MichaelScott','michaelscott','Michael','Scott','ashfrog96@gmail.com'),
+  (2,'KarenF','karenf','Karen','Filippelli','ashfrog96@gmail.com');
+
+INSERT INTO employees (manager_id,employee_username,employee_password,employee_first_name,employee_last_name,job_title,employee_email) 
+VALUES
+  (0,'PamBeesly','pambeesly','Pam','Beesly','Receptionist','ashfrog96@gmail.com'),
+  (0,'JimHalpert','jimhalpert','Jim','Halpert','Sales Rep','ashfrog96@gmail.com'),
+  (0,'DwightSchrute','dwightschrute','Dwight','Schrute','Assistant to the Regional Manager','ashfrog96@gmail.com'),
+  (2,'AJ','aj','A','J','Sales Rep','ashfrog96@gmail.com'),
+  (0,'RyanHoward','ryanhoward','Ryan','Howard','Temp','ashfrog96@gmail.com'),
+  (1,'AndyBernard','andybernard','Andy','Bernard','Sales Rep','ashfrog96@gmail.com'),
+  (1,'MartinNash','martinnash','Martin','Nash','Supplier Relations','ashfrog96@gmail.com'),
+  (2,'HollyFlax','hollyflax','Holly','Flax','Human Resources','ashfrog96@gmail.com'),
+  (2,'OscarMartinez','oscarmartinez','Oscar','Martinez','Accountant','ashfrog96@gmail.com'),
+  (1,'TonyGardner','tonygardner','Tony','Gardner','N/A','ashfrog96@gmail.com');
+
+
+INSERT INTO reimbursements (reimbursement_id,employee_id,amount,reason,datetime,status,manager_id,employee_first_name,employee_last_name,manager_message,job_title) 
+VALUES
+  (1,7,500,'Michael stole Holly.','Michael stole Holly.','accepted',2,'A','J','N/A','Sales Rep'),
+  (1,1,60,'I wore a tuxedo.','2021-06-28 11:56:17','rejected',0,'Jim','Halpert','N/A','Sales Rep'),
+  (0,9,300,'Angela complained about my sandals.','2021-06-24 13:10:43','pending',2,'Oscar','Martinez','N/A','Accountant'),
+  (0,8,250,'Woody was thrown in the trash','2021-06-24 13:10:42','pending',2,'Holly','Flax','N/A','Human Resources'),
+  (0,7,200,'Michael asked about my dating life in the office.','2021-06-24 13:10:41','pending',2,'A','J','N/A','Sales Rep'),
+  (0,6,200,'New boss fired me after I quit','2021-06-24 13:10:40','rejected',1,'Tony','Gardner','N/A','N/A'),
+  (0,5,100,'New boss pretended to be an inmate','2021-06-24 13:10:39','pending',1,'Martin','Nash','N/A','Supplier Relations'),
+  (0,4,100,'I punched the wall','2021-06-24 13:10:38','pending',1,'Andy','Bernard','N/A','Sales Rep'),
+  (0,3,1000,'I started a fire','2021-06-24 13:10:37','pending',0,'Ryan','Howard','N/A','Temp'),
+  (0,2,50,'Drove Andy to the hospital','2021-06-24 13:10:36','accepted',0,'Pam','Beesly','N/A','Receptionist'),
+  (0,1,50,'Dwight threw my cellphone out the car.','2021-06-24 13:10:35','accepted',0,'Jim','Halpert','N/A','Sales Rep'),
+  (1,0,100,'I hit myself with a phone.','2021-06-24 13:10:34','rejected',0,'Dwight','Schrute','N/A','Assistant to the Regional Manager'),
+  (0,0,50,'Jim put my stapler in jello again!','2021-06-24 13:10:33','pending',0,'Dwight','Schrute','N/A','Assistant to the Regional Manager');
+
+COMMIT;

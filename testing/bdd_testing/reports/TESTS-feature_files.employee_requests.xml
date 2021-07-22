@@ -1,0 +1,44 @@
+<testsuite name="feature_files.employee_requests.Employee Requests" tests="3" errors="0" failures="0" skipped="0" time="21.837707" timestamp="2021-07-11T17:10:16.741463" hostname="DESKTOP-S4TUTV9"><testcase classname="feature_files.employee_requests.Employee Requests" name="An employee would like to check all their sent reimbursement requests" status="passed" time="4.373086"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: An employee would like to check all their sent reimbursement requests
+    Given An employee is logged in and on the profile page ... passed in 3.765s
+    When An employee clicks on the Reimbursement Requests link ... passed in 0.602s
+    Then The employee is redirected to the Reimbursement Requests page ... passed in 0.007s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="feature_files.employee_requests.Employee Requests" name="An employee would like to submit a new reimbursement request via the input form" status="passed" time="9.336718"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: An employee would like to submit a new reimbursement request via the input form
+    Given An employee is logged in and on the profile page ... passed in 2.976s
+    Given An employee is on the Reimbursement Requests page ... passed in 0.619s
+    When The employee clicks on the Submit new reimbursement request link ... passed in 1.512s
+    And The employee fills in the Amount and Reason fields ... passed in 0.046s
+    And The employee clicks on the Submit Request button ... passed in 1.669s
+    Then The employee is redirected to the Reimbursement Requests page ... passed in 0.010s
+    And The new reimbursement request is added to the page ... passed in 0.821s
+    And The employee can delete the new reimbursement ... passed in 1.684s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="feature_files.employee_requests.Employee Requests" name="An employee would like to submit a new reimbursement request via uploading a file" status="passed" time="8.127902"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: An employee would like to submit a new reimbursement request via uploading a file
+    Given An employee is logged in and on the profile page ... passed in 2.032s
+    Given An employee is on the Reimbursement Requests page ... passed in 0.526s
+    When The employee clicks on the Submit new reimbursement request link ... passed in 1.333s
+    And The employee uploads a file ... passed in 0.032s
+    And The employee clicks on the Upload File button ... passed in 1.580s
+    Then The employee is redirected to the Reimbursement Requests page ... passed in 0.009s
+    And The new reimbursement request is added to the page ... passed in 0.881s
+    And The employee can delete the new reimbursement ... passed in 1.734s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>
